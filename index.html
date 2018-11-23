@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Homework Help Bot Docs</title>
+    <meta name="description" content="">
+    
+    
+    <link rel="preload" href="/assets/css/0.styles.cc2a2ebf.css" as="style"><link rel="preload" href="/assets/js/app.6088e4cb.js" as="script"><link rel="preload" href="/assets/js/3.e57f310f.js" as="script"><link rel="prefetch" href="/assets/js/2.30eef2e3.js"><link rel="prefetch" href="/assets/js/4.6d24372f.js"><link rel="prefetch" href="/assets/js/5.aff0edab.js"><link rel="prefetch" href="/assets/js/6.59fbab51.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.cc2a2ebf.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-exact-active router-link-active"></a> <div class="links" style="max-width:nullpx;"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="https://github.com/spjy/hwh-bot" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="https://github.com/spjy/hwh-bot" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><div class="sidebar-group first"><p class="sidebar-heading open"><span></span> <!----></p> <ul class="sidebar-group-items"><li><a href="/" class="active sidebar-link">Homework Help Bot Docs</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/#requirements" class="sidebar-link">Requirements</a></li><li class="sidebar-sub-header"><a href="/#installing" class="sidebar-link">Installing</a></li><li class="sidebar-sub-header"><a href="/#running" class="sidebar-link">Running</a></li><li class="sidebar-sub-header"><a href="/#directory-structure" class="sidebar-link">Directory Structure</a></li></ul></li></ul></div></li></ul> </div> <div class="page"> <div class="content"><h1 id="homework-help-bot-docs"><a href="#homework-help-bot-docs" aria-hidden="true" class="header-anchor">#</a> Homework Help Bot Docs</h1> <p>The Homework Help Bot, aka HWH Bot was built to automate mundane, daily functions within the
+Homework Help server such as changing roles, logging actions and prettifying messages. It was built
+using the Discord.js library.</p> <h2 id="requirements"><a href="#requirements" aria-hidden="true" class="header-anchor">#</a> Requirements</h2> <ol><li>Node &gt;= 8</li> <li>npm or yarn</li></ol> <h2 id="installing"><a href="#installing" aria-hidden="true" class="header-anchor">#</a> Installing</h2> <p>If its functionality mirrors your server and you'd like to use it, or if you just want to learn
+from it, here's how you install it:</p> <div class="language-sh extra-class"><pre class="language-text"><code># Clone the repository
+git clone https://github.com/spjy/hwh-bot.git
+
+# Change directories into the repo root 
+cd hwh-bot
+
+# Install dependencies 
+npm i
+</code></pre></div><p>Finally, set up your environment variables; copy and paste <code>.env.schema</code> and
+fill at least <code>DISCORD_TOKEN</code>; the others are optional.</p> <h2 id="running"><a href="#running" aria-hidden="true" class="header-anchor">#</a> Running</h2> <p>To run the bot, simply type:</p> <div class="language-sh extra-class"><pre class="language-text"><code># Run the bot
+npm start
+</code></pre></div><h2 id="directory-structure"><a href="#directory-structure" aria-hidden="true" class="header-anchor">#</a> Directory Structure</h2> <p>The bot is event based, and naturally the file structure represents that. The <code>/src</code> folder
+contains all of the source code of the bot. Each Discord.js defined event that HWH Bot uses
+is separated into their respective folders, namely in <code>/src/events</code>, and related scripts are
+contained in the event's folder. For example, message based events are contained within
+<code>/src/events/message</code> and its respective scripts are inside that event's folder.</p> <div class="language- extra-class"><pre class="language-text"><code>│   .env
+│   .env.schema
+│   .eslintrc.json
+│   .gitattributes
+│   .gitignore
+│   Dockerfile
+│   LICENSE
+│   package.json
+│   Procfile
+│   README.md
+│   yarn.lock
+│
+└───src
+    │   index.js
+    │   
+    └───events
+        │   index.js
+        │   
+        ├───guildBanAdd
+        │       index.js
+        │       log.js
+        │       
+        ├───guildBanRemove
+        │       index.js
+        │       log.js
+        │       
+        ├───guildMemberAdd
+        │       index.js
+        │       log.js
+        │       
+        ├───guildMemberRemove
+        │       index.js
+        │       log.js
+        │       
+        ├───message
+        │       dialogflow.js
+        │       dm.js
+        │       index.js
+        │       mention.js
+        │       mentionable.js
+        │       report.js
+        │       role.js
+        │       rules.js
+        │       suggestRole.js
+        │       tipa5.js
+        │       tips.js
+        │       warning.js
+        │       
+        └───messageReactionAdd
+                index.js
+                suggestRole.js
+</code></pre></div><h3 id="main-src-index-js-file"><a href="#main-src-index-js-file" aria-hidden="true" class="header-anchor">#</a> Main <code>/src/index.js</code> file</h3> <p><code>/src/index.js</code> is the final piece of the puzzle to mend each component together. In here,
+we run Discord.js, define constants and instantiate events.</p> <p>Constants are values that remain unchanged and increase readability. For instance, we define
+user, role and channel IDs (which remain constant) and increase readability in the code below.</p> <p>Events are defined based on the <a href="https://discord.js.org/#/docs/main/stable/class/Client" target="_blank" rel="noopener noreferrer">Discord.js defined client events<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>. You should only import relevent scripts
+within each respective event function. For example, I would not use a <code>messageReactionAdd</code> script
+inside a <code>message</code> event.</p> <h3 id="event-folders"><a href="#event-folders" aria-hidden="true" class="header-anchor">#</a> Event Folders</h3> <p>As mentioned before, event folders are inside <code>/src/events</code> and are named based on the Discord.js
+defined events. Scripts within each event folder are automatically imported by the <code>index.js</code>
+file and stored into a <a href="https://discord.js.org/#/docs/main/stable/class/Collection" target="_blank" rel="noopener noreferrer">Discord.js Collection<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> and are available for use only inside the <code>/src/index.js</code> file. You can access the event by running:</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code>client<span class="token punctuation">.</span>events
+  <span class="token punctuation">.</span><span class="token keyword">get</span><span class="token punctuation">(</span><span class="token string">'eventName::scriptName'</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">execute</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>Each script within the event should be modularized per command. For example, if a report command
+should be in a separate script from a role change command.</p> <p>The file name of the script should be camel cased and reflect what the script does in some way.
+For example if the script allows a user to suggest a role, the file would be called <code>suggestRole.js</code>
+Additionally, a general template should be followed:</p> <p><strong>Commented Template</strong></p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">// Import Raven for error handling</span>
+<span class="token keyword">const</span> Raven <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'raven'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// Export statement</span>
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  description<span class="token punctuation">:</span> <span class="token string">''</span><span class="token punctuation">,</span> <span class="token comment">// Brief description of script</span>
+  <span class="token keyword">async</span> <span class="token function">execute</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token comment">// Function containing logic</span>
+    <span class="token keyword">try</span> <span class="token punctuation">{</span>
+      <span class="token comment">// Script contents</span>
+    <span class="token punctuation">}</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span><span class="token class-name">err</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      Raven<span class="token punctuation">.</span><span class="token function">captureException</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// Send errors to Raven</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><p><strong>Blank Template</strong></p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">const</span> Raven <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'raven'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  description<span class="token punctuation">:</span> <span class="token string">''</span><span class="token punctuation">,</span>
+  <span class="token keyword">async</span> <span class="token function">execute</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">try</span> <span class="token punctuation">{</span>
+
+    <span class="token punctuation">}</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span><span class="token class-name">err</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      Raven<span class="token punctuation">.</span><span class="token function">captureException</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div></div> <div class="page-edit"><!----> <!----></div> <!----> </div> <!----></div></div>
+    <script src="/assets/js/3.e57f310f.js" defer></script><script src="/assets/js/app.6088e4cb.js" defer></script>
+  </body>
+</html>
